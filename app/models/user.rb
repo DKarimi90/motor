@@ -1,4 +1,8 @@
 class User < ApplicationRecord
-    has_many :reviews 
-    has_many :cars, through: :reviews 
+    
+
+    has_secure_password
+    
+    has_many :cars
+    has_many :reviews
 end
