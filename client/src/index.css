@@ -1,3 +1,9 @@
+@media screen and (max-width: 600px) {
+  .landing img {
+    width: 100%; 
+    height: auto; 
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=MonteCarlo&family=Montserrat:ital,wght@0,200;0,300;0,700;1,200;1,400&family=Moon+Dance&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono&family=Roboto:ital,wght@0,100;1,300&family=Sassy+Frass&family=Shadows+Into+Light&display=swap');
 
 :root {
@@ -125,7 +131,7 @@ body {
 }
 
 .car img {
-  width: 200px; 
+  width: 180px; 
   height: 140px; 
   margin: 1px; 
 }
