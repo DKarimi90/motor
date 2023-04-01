@@ -1,18 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=MonteCarlo&family=Montserrat:ital,wght@0,200;0,300;0,700;1,200;1,400&family=Moon+Dance&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono&family=Roboto:ital,wght@0,100;1,300&family=Sassy+Frass&family=Shadows+Into+Light&display=swap');
 
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Edu+NSW+ACT+Foundation:wght@500&family=Fasthand&family=MonteCarlo&family=Montserrat:ital,wght@0,200;0,300;0,700;1,200;1,400&family=Moon+Dance&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono&family=Roboto:ital,wght@0,100;1,300&family=Sassy+Frass&family=Shadows+Into+Light&display=swap');
+:root {
+  --primary: #003d5b; 
+  --secondary: #fff; 
+}
 
 body {
   font-family: Montserrat;
 }
-
 .navbar {
   display: flex; 
   justify-content: flex-end;
   align-items: center;
   margin: auto; 
   gap: 10px; 
+  box-shadow: 0.5px 0.5px 0.5px;
+  padding: 5px; 
 
 }
 .navbar > h2 {
@@ -24,16 +27,16 @@ body {
 
 .navbar > a {
   text-decoration: none;
-  color: white; 
-  background-color: #003d5b;
+  color: var( --secondary); 
+  background-color: var(--primary);
   padding: 5px; 
-  font-size: 12px;
+  font-size: 8px;
   border-radius: 5px;
 }
 .navbar > a:hover {
   text-decoration: none;
-  color: #003d5b; 
-  background-color: white;
+  color: var(--primary); 
+  background-color: var( --secondary);
 
 }
 .card {
@@ -46,24 +49,22 @@ body {
   font-size: 8px;
 }
 
-.details {
+.handle-button {
   background-color: transparent; 
   border: none; 
   outline: none; 
   padding: 3px; 
   margin: 2px; 
-  margin-left: 30%;
-  color: #fff; 
-  background-color: #003d5b;
+  color: #000; 
+  background-color: rgb(0, 0, 0, 0.05);
   border-radius: 4px;
   padding: 5px; 
+  font-size: 6px; 
 }
-.details:hover {
+.handle-button:hover {
   cursor: pointer; 
   color: #003d5b; 
-  background-color: white;
-
-
+  background-color: var( --secondary);
 }
 
 .landing p {
@@ -85,50 +86,55 @@ body {
 }
 .motor {
   background-color: rgb(0, 0, 0, 0.05);
-  /* background-color: #003d5b;
+  /* background-color: var(--primary);
   color: #fff; */
   padding: 7px;
   border-radius: 4px; 
   display: flex; 
   flex-direction: column;
+  margin-top: 5px;
+
 }
 .btn {
   margin-top: 20%;
   margin-left: 30%;
 } 
 .btn {
-  background-color: #003d5b;
+  background-color: var(--primary);
   border: none; 
   outline: none; 
   padding: 5px; 
-  color: white; 
+  color: var( --secondary); 
   border-radius: 5px;
 }
 .btn:hover {
   cursor:pointer; 
   color: #003d5b;
-  background-color: #fff;
+  background-color: var( --secondary);
+}
+.buttons {
+  display: flex; 
+  justify-content: space-between;
 }
 .car {
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
+  background-color: var( --secondary);
+  border: 1px solid var( --secondary);
   border-radius: 5px;
   overflow: hidden;
-  margin: 5px; 
+  margin: 3px; 
 }
 
 .car img {
-  width: 230px; 
-  height: 160px; 
-  margin: 2px; 
+  width: 200px; 
+  height: 140px; 
+  margin: 1px; 
 }
 
 .car-details img {
-  background-color: #fff;
-  border: 1px solid #e0e0e0;
+  background-color: var( --secondary);
+  border: 1px solid var( --secondary);
   border-radius: 5px;
-  overflow: hidden;
-  margin: 10px; 
+  overflow: hidden; 
   width: 400px; 
 }
 .car p {
@@ -137,6 +143,7 @@ body {
 }
 .car-details p {
  text-align: center;
+ font-size: 10px;
 }
 .car-details h4 {
   text-align: center;
@@ -145,8 +152,8 @@ body {
   display: flex; 
   justify-content: space-evenly;
   height: 20%; 
-  color: #ffff; 
-  background-color: #003d5b; 
+  color: var( --secondary); 
+  background-color: var(--primary); 
   margin-top: 20%;
   padding: 20px 5px; 
 
@@ -159,20 +166,68 @@ body {
  }
  .center a {
   text-decoration: none;
-  color: #fff; 
+  color: var( --secondary); 
  }
  .contact a {
   text-decoration: none;
   color: #000; 
+  font-size: 10px; 
+ }
+ .contact p {
+  text-align: center;
  }
  .contact a:hover {
   text-decoration: none;
-  color: #fff; 
+  color: var( --secondary); 
   cursor: pointer; 
-  background-color: #003d5b;
+  background-color: var(--primary);
   padding: 4px; 
   border-radius: 2px;
  }
+ .search input {
+  margin: 5%;
+  margin-left: 30%;
+  text-align: center;
+  border: 1px solid; 
+  outline: none; 
+  border-radius: 2px; 
+ }
+ .form {
+  background-color: rgb(0, 0, 0, 0.05);
+  padding: 5px;
+  margin: 5px; 
+  border-radius: 4px;
+ }
+ .form input {
+  margin: 2px; 
+  text-align: center;
+  border: none; 
+  outline: none; 
+ }
+ .more-details {
+  background-color: rgb(0, 0, 0, 0.05);
+  padding: 5px;
+  border-radius: 3px;
+ }
+ .brief-details {
+  background-color: rgb(0, 0, 0, 0.05);
+  padding: 5px;
+  margin: 2px; 
+
+ }
+ .services {
+  display: flex; 
+  flex-wrap: wrap;
+ }
+ .more-info {
+  width: 100%; 
+  text-align: left;
+  margin: 3px; 
+  padding: 5px; 
+  background-color: rgb(0, 0, 0, 0.05);
+ }
+ 
+
 
 
 

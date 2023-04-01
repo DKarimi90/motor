@@ -7,7 +7,7 @@ function Contact() {
         <p>Phone: (+254)-720-345-654</p>
         <p>Email: motorworldkenya@nairobi.com</p>
         <p>Address: 5th Street, Upperhill</p>
-        <Link to='/'>Home</Link>
+        <Link to='/'>Back Home</Link>
     </div>
   )
 }
